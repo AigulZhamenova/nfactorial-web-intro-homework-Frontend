@@ -12,7 +12,7 @@ let defender; //undefined
 console.log("Футбольная команда: "+football_team);
 console.log("Капитан команды: "+captain);
 console.log(`В команде ${team} игроков`); 
-console.log("Выиграш: "+win); 
+console.log("Выигрыш: "+win); 
 console.log(kick);
 console.log("Защитник: "+defender);
 
@@ -34,7 +34,7 @@ console.log(player);
 player.position = 'нападающий'; //изменение
 console.log(player); 
 
-player.start = 2015; //обавление
+player.start = 2015; //добавление
 console.log(player);
  
 delete player.age; //удаление
@@ -82,18 +82,3 @@ for (let key in salaries) {
 }
 
 console.log(sum);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
