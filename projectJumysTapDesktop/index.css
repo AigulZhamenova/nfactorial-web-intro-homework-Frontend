@@ -45,6 +45,7 @@ body{
     border-radius: 100px; 
     background-color: #081E341F;
     border: 0;
+    cursor: pointer;
 }
 
 .left-header img{
@@ -101,6 +102,7 @@ body{
     padding: 16px 24px;
     border-radius: 100px;
     border: 0;    
+    cursor: pointer;
 }
 
 
@@ -252,44 +254,40 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .search{
-    position: relative;
     height: 50px;
     width: 619px;
     background-color: #FFFFFF;
     border-radius: 12px;
-    border: 1px;
-    border-color: #E1DEE7;
+    border: 1px solid #E1DEE7;  
+    margin: 0;  
+    padding-left: 49px; 
+    outline: none;
 }
 
-.search img{
-    position: absolute;
-    height: 24px;
-    width: 24x;
-    top: 13px;
-    left: 13px;
-    opacity: 20%;
-}
-
-.search p{
-    position: absolute;
-    height: 22px;
-    width: 495px;
-    top: 13px;
-    left: 13px;    
-    color: #000000;
+.search::placeholder{
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 16px;  
-    margin: 0;    
-    top: 14px;
-    left: 49px;
+    color: #000000;
     opacity: 20%;
 }
 
-.block3-2 button{
+
+.block3-2 img{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 13px;
+    left: 13px;
+    opacity: 20%;
+    pointer-events: none;
+}
+
+.submit{
     height: 50px;
     width: 106px;  
     color: white;
@@ -300,10 +298,8 @@ body{
     background-color: #712FFF;
     border: 0;
     border-radius: 100px;
+    cursor: pointer;
 }
-
-
-
 
 .block4{
     height: 420px;
@@ -388,7 +384,8 @@ body{
     width: 114px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
+    cursor: pointer;
 }
 
 .block4-2 img{
