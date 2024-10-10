@@ -1,0 +1,160 @@
+body {
+    margin: 20px 40px;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 16px;
+  }
+  
+  /*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+  .wrapper {
+    display: flex;
+    height: 60px;
+    background-color: green;
+    margin-bottom: 20px;
+  }
+  
+  /*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+  .redExample {
+    flex: 1;
+    background-color: red;
+  }
+  
+  /*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+  .blueExample {
+    flex: 1;
+    background-color: blue;
+  }
+  
+  /*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+  .emptyExample2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+  }
+  
+  .blueExample2 {
+    width: 80px;
+    background-color: blue;
+  }
+
+  .emptyExample2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+  }
+  
+  .blueExample2 {
+    width: 80px;
+    background-color: blue;
+  }
+  
+  /* TODO: Add CSS for the rest of your solution below */
+
+  
+  .emptyExample3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .blueExample3 { 
+    width: 80px;
+    background-color: blue;
+  }
+  .redExample3 {
+    width: 80px;
+    background-color: red;
+  }
+
+  .emptyExample4 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    background-color: red;
+  }
+
+  .emptyExample5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .redExample5{
+    background-color: red;
+    height: 40px;
+    width: 40px; 
+  }
+
+  .emptyExample6 {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    width: 100%;
+  }
+  .redExample6{
+    background-color: blue;
+    height: 100%;
+    width: 70px; 
+  }
+
+  .emptyExample7 {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    width: 100%;
+  }
+  .redExample7{
+    background-color: red;
+    height: 100%;
+    width: 80px; 
+  }
+
+  .blueExample7{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    height: 100%;
+    flex-grow: 1;
+  }
+  .greenExample7{
+    background-color: green;
+    height: 20px;
+    width: 100%; 
+  }
+  
+  .emptyExample8{
+    display: grid;
+    grid-template-columns: 80px 1fr 80px 1fr 80px 1fr 80px 1fr 80px;    
+    grid-template-rows: 60px;
+    margin-bottom: 20px;
+  }
+  .orangeExample8 {
+    background-color: orange;
+  }
+  .greenExample8 {
+    background-color: green;
+  }
+
+  .emptyExample9{
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;    
+    grid-template-rows: 60px;
+    margin-bottom: 20px;
+  }
+  .orangeExample9 {
+    background-color: orange;
+  }
+  .greenExample9 {
+    background-color: green;
+  }
+
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+  }
