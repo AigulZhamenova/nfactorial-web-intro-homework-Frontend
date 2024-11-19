@@ -26,9 +26,22 @@ export default function SideMenu(){
         ]
     return (
         <div className="mt-3 mx-5 side-menu">
-            <img scr={require('./images/twitter.png')} className='logo-icon mb-2'/>
+            <img src={require('./images/twitter.png')} className='logo-icon mb-2'/>
             
             {menu.map((item,index)=> <MenuItem item={item} key={index}/>)}
+            <button className="btn text-white bg-primary py-2 rounded-pill"> Tweet </button>
+
+            <div className='bottom-fixed d-flex flex-row justify-content-between align-items-center'>   
+                <div className='d-flex flex-row'>
+                    <img src={require('./images/profilePhoto.jpeg')} style={{width: 50, height: 50, borderRadius: 50}}/>
+                    <div className='d-flex flex-column mx-2 justify-content-center'>
+                        <p className='m-0'>Aigul Zhamenova</p>
+                        <p className='text-muted m-0'>@azhamenova</p>
+                    </div>
+                </div>
+                <img src={require('./images/vector.png')} style={{width: 20, height: 20}} className=''/>
+               
+            </div>
         </div>        
     )
 }

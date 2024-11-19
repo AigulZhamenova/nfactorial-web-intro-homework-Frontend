@@ -5,5 +5,18 @@
 
 .side-menu{
     position: fixed;
-    width: 200px;
+    width: 250px;
+    font-size: 13px;
+    height: 100%; 
+}
+
+.btn{
+    width: 100%;
+    border: none
+}
+
+.bottom-fixed {
+    position: absolute; /* Этот компонент будет находиться относительно side-menu */
+    bottom: 30px; /* Отступ от нижнего края */
+    width: 100%;
 }
