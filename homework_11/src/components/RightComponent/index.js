@@ -1,5 +1,6 @@
 import React from "react";
 import Trend from './Trend.js'
+import Follow from './Follow.js'
 
 class RightComponent extends React.Component {
     constructor(){
@@ -62,8 +63,26 @@ class RightComponent extends React.Component {
                     name: '#NFTFam',
                     count: 2.623,
                 }
-                
-        ]
+            
+               ],
+            
+            follows: [
+                {
+                    id: 0,
+                    img: './images/profilePhoto.jpeg',
+                    name: 'Berikova Akerke',
+                    login: '@millereon'
+                },
+                {
+                    id: 0,
+                    img: './images/profilePhoto.jpeg',
+                    name: 'Tokenova Madina',
+                    login: '@ttokenova'
+                }
+
+            ]
+            
+
         }
     }
    
@@ -82,7 +101,7 @@ class RightComponent extends React.Component {
     };
 
     render(){
-        const { trends} = this.state;
+        const { trends, follows} = this.state;
 
         return(
             <div className="w-75 mt-3">
@@ -110,7 +129,7 @@ class RightComponent extends React.Component {
                         }} />
                 </div>
                 
-                <div className="w-100 px-3 py-2 mx-4 my-4" style={{
+                <div className="w-100 px-3 py-3 mx-4 my-4" style={{
                     backgroundColor: '#f7f7f7',
                     borderRadius: 15, 
                 }}>
@@ -119,6 +138,26 @@ class RightComponent extends React.Component {
                     fontSize: 19,
                     }}> Trends for you</p>
                     <div className="my-3"> {trends.map((trend) => <Trend trend={trend} key={trend.id}/>)} </div>
+                    <button style={{
+                        border: 'none',
+                        margin: "15px 0",
+                        backgroundColor: "transparent",
+                        color: "blue"
+                    }}>
+                        Show more
+                    </button>
+                </div>
+
+                <div className="w-100 px-3 py-3 mx-4 my-4" style={{
+                    backgroundColor: '#f7f7f7',
+                    borderRadius: 15, 
+                }}>
+                    <p style={{
+                    fontWeight:500,
+                    fontSize: 19,
+                    }}> Who to Follow</p>
+                    
+                    <div className="my-4"> {follows.map((follow) => <Follow follow={follow} key={follow.id}/>)} </div>
                     <button style={{
                         border: 'none',
                         margin: "15px 0",
