@@ -1,0 +1,155 @@
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.mainapp{
+  margin: 50px 80px;
+}
+
+.btns{
+  margin-top: 80px;
+  width: 100%;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.filterBtn{
+  display: flex;
+  gap: 16px;
+  height: 40px;
+}
+
+.filterBtn button{
+  padding: 8px 24px;
+  background-color: #F0F0F0;
+  color: #081E34;
+  border: none;
+  border-radius: 100px;
+  
+}
+
+button{
+  
+  cursor: pointer
+}
+
+.filterBtn button:focus{
+  background-color: #081E346B;
+  color:white
+}
+
+.rel{
+  position: relative;
+  padding: 10px;
+}
+
+.btn {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: black;
+}
+
+.modal{
+  width: 240px;
+  height: 200px;
+  position: absolute;
+  left: -298px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #E4E6E7;
+  border-radius: 12px;
+  padding: 16px;
+
+}
+
+.modal p{
+ font-weight: 700px;
+ margin: 5px;
+}
+
+.modal textarea{
+  width: 220px;
+  height: 120px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  overflow-wrap: break-word;
+  margin-top: 5px
+}
+
+.addBtn{
+  width: 76px;
+  margin: 0;
+  color: white;
+  background-color: black;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 8px 24px;
+}
+
+.todosList{
+  width: 100%;
+  margin-top: 50px;
+}
+.todosList h2{
+  width: 100%;
+  border-bottom: 2px solid #d4d4db;
+  padding-bottom: 24px;
+  
+}
+
+.todosList ul{
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+
+.footer{
+  
+  margin: 50px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gray{
+  color: #081E34;
+  opacity: 50%;
+}
+
+li{
+  list-style-type:  none;
+}
+
+.list{
+  display: flex;
+  gap: 8px;
+  text-align: center;
+  align-items: center;
+  margin:  16px 0;
+}
+
+.del{
+  
+  position: relative;
+}
+
+.delete{
+  left: 0;
+  top: 10px;
+  border-radius: 12px;
+  background-color: #E4E6E7;
+  width: 240px;
+  height: 48px;
+  padding: 12px 4px;
+}
