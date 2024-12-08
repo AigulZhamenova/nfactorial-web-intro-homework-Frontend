@@ -1,13 +1,28 @@
 import { useState } from 'react';
 
 
-export default function Delete({addItem}){
+export default function Delete({deleteItem,deleteForeverItem, backToItem, todo}){
 
 
 return <div className='delete'> 
-       <button>
-            <img src="/delete.png" style={{width: "11px", height: "14px"}} alt=""/> 
-            <p>Move to Trash</p>
-       </button> 
+        {todo.status === "trash" ? (
+        <>
+          <button className="btnDelete"  onClick={() => deleteForeverItem(todo.id)}>
+            <img src="/delete.png" style={{width: "24px", height: "24px"}} alt=""/> 
+            Delete Forever
+          </button> 
+          <button className="btnDelete"  onClick={() => backToItem(todo.id)}>
+            <img src="/move.png" style={{width: "24px", height: "24px"}} alt=""/> 
+            Move Back To To Do
+          </button> 
+        </>
+      ) : (
+        <>
+          <button className="btnDelete"  onClick={() => deleteItem(todo.id)}>
+            <img src="/delete.png" style={{width: "24px", height: "24px"}} alt=""/> 
+            Move to Trash
+           </button> 
+        </>
+      )} 
     </div>
 }

@@ -1,3 +1,7 @@
+body{
+  background-color: #F1F1F1;
+}
+
 .app {
   width: 100%;
   display: flex;
@@ -28,7 +32,7 @@
 
 .filterBtn button{
   padding: 8px 24px;
-  background-color: #F0F0F0;
+  background-color: #081E340D;
   color: #081E34;
   border: none;
   border-radius: 100px;
@@ -40,7 +44,7 @@ button{
   cursor: pointer
 }
 
-.filterBtn button:focus{
+.filterBtn button.choosen{
   background-color: #081E346B;
   color:white
 }
@@ -100,6 +104,7 @@ button{
 .todosList{
   width: 100%;
   margin-top: 50px;
+  height: 300px;
 }
 .todosList h2{
   width: 100%;
@@ -116,7 +121,7 @@ button{
 
 .footer{
   
-  margin: 50px 80px;
+  margin: 50px 80px 10px 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -136,20 +141,43 @@ li{
   gap: 8px;
   text-align: center;
   align-items: center;
-  margin:  16px 0;
-}
-
-.del{
-  
+  margin:  16px 0px;
+  padding-left: 10px;
+  width: 600px;
   position: relative;
 }
 
+.list:hover{
+  background-color: #E4E6E7
+}
+
+
 .delete{
+  position: absolute;
   left: 0;
-  top: 10px;
+  top: 30px;
+  z-index: 10;
   border-radius: 12px;
   background-color: #E4E6E7;
-  width: 240px;
-  height: 48px;
-  padding: 12px 4px;
+  width: 200px;
+  padding: 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.btnDelete{
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  width: 100%;
+  border: 0;
+  background-color: #E4E6E7;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.btnDelete:hover{
+  background-color: #081E3433;
 }
